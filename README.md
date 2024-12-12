@@ -10,7 +10,8 @@ Click the links below or find and extensive list of qr codes and links for gamep
 |-|-|-|-|-|--------------------------------------------------------------------------------------------|-|
 
 ## Screenshots
-It is recommended to watch the videos and they give a better view of the game
+**It is recommended to watch the videos and they give a better view of the game**
+
 ![1](images/1.png)
 ![2](images/2.png)
 
