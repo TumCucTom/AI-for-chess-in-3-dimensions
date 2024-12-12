@@ -1,7 +1,10 @@
 # Engine and AI for chess in 3 dimensions
 
-The first ever way to play 3 dimensional chess on your machine, including an AI making use of NN and mini-max with alpha-beta pruning. 
-For a brief overview of what is in the report check [other](#other-).
+The first ever way to play 3 dimensional chess on your machine, including an AI making use of a NN and mini-max with alpha-beta pruning. 
+- For a brief overview of what is in the report check [other](#other-).
+- **- CODE LOST - REBUILDING UNITY ENVIRONMENT**
+- **In the mean time, all c# code can be found in the report under "technical solution"**
+- This was my A-Level year long coursework (AQA NEA) scoring 75/75 
 
 ## Game play videos
 Click the links below or find and extensive list of qr codes and links for gameplay, testing and AI.
@@ -10,7 +13,8 @@ Click the links below or find and extensive list of qr codes and links for gamep
 |-|-|-|-|-|--------------------------------------------------------------------------------------------|-|
 
 ## Screenshots
-It is recommended to watch the videos and they give a better view of the game
+**It is recommended to watch the videos and they give a better view of the game**
+
 ![1](images/1.png)
 ![2](images/2.png)
 
