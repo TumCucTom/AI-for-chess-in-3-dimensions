@@ -2,8 +2,9 @@
 
 The first ever way to play 3 dimensional chess on your machine, including an AI making use of NN and mini-max with alpha-beta pruning. 
 - For a brief overview of what is in the report check [other](#other-).
-- **THIS WAS MY A-LEVEL PROJECT - CODE LOST - REBUILDING UNITY ENVIRONMENT**
+- **- CODE LOST - REBUILDING UNITY ENVIRONMENT**
 - **In the mean time, all c# code can be found in the report under "technical solution"**
+- This was my A-Level year long coursework (AQA NEA) scoring 75/75 
 
 ## Game play videos
 Click the links below or find and extensive list of qr codes and links for gameplay, testing and AI.
