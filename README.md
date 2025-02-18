@@ -10,7 +10,7 @@ The first ever way to play 3 dimensional chess on your machine, including an AI 
 ## Game play videos
 Click the links below or find and extensive list of qr codes and links for gameplay, testing and AI.
 
-| [The UI](https://drive.google.com/file/d/1P_QHI3i7d4_Z3KJNa_NvEuw3T7rGGZh6/view?usp=sharing) | [The game](https://drive.google.com/file/d/1dlYP3whWLXkN6hpcErFNKTLKL2xOJw8Z/view?usp=sharing) | [AI 1](https://drive.google.com/file/d/1AviV2v248TPKDxctyYy3FwVjcoFGoMfg/view?usp=sharing) | [AI 2](https://drive.google.com/file/d/1S9iJMHfFmvPohUn5oZJ6BBWpzO3tqm_n/view?usp=sharing) | [AI 3](https://drive.google.com/file/d/1xQ-0aF9L2FEhM-wmQHJz7WtWmFXBN3Vb/view?usp=sharing)| [AI 4](https://drive.google.com/file/d/1RiMu6ynkAT4-griymNg4189O4wqW62l0/view?usp=sharing) |[AI 5](https://drive.google.com/file/d/1fucjt-9S3sGcmlnqW9m6hUFV8rbZA8dw/view?usp=sharing)|
+| [The UI](https://drive.google.com/file/d/1P_QHI3i7d4_Z3KJNa_NvEuw3T7rGGZh6/view?usp=sharing) | [The game](https://drive.google.com/file/d/1dlYP3whWLXkN6hpcErFNKTLKL2xOJw8Z/view?usp=sharing) | [AI 1](https://drive.google.com/file/d/1AviV2v248TPKDxctyYy3FwVjcoFGoMfg/view?usp=sharing) | [AI 2](https://drive.google.com/file/d/1S9iJMHfFmvPohUn5oZJ6BBWpzO3tqm_n/view?usp=sharing) | [AI 3](https://drive.google.com/file/d/1xQ-0aF9L2FEhM-wmQHJz7WtWmFXBN3Vb/view?usp=sharing)| [AI 4](https://drive.google.com/file/d/1RiMu6ynkAT4-griymNg4189O4wqW62l0/view?usp=sharing) |[Main AI - AI 5](https://drive.google.com/file/d/1fucjt-9S3sGcmlnqW9m6hUFV8rbZA8dw/view?usp=sharing)|
 |-|-|-|-|-|--------------------------------------------------------------------------------------------|-|
 
 ## Screenshots
