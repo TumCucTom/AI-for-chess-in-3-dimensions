@@ -4,7 +4,8 @@ The first ever way to play 3 dimensional chess on your machine, including an AI 
 - For a brief overview of what is in the report check [other](#other-).
 - **- CODE LOST - REBUILDING UNITY ENVIRONMENT**
 - **In the mean time, all c# code can be found in the report under "technical solution"**
-- This was my A-Level year long coursework (AQA NEA) scoring 75/75 
+- This was my A-Level year long coursework (AQA NEA) scoring 75/75
+- [This video](https://drive.google.com/file/d/1fucjt-9S3sGcmlnqW9m6hUFV8rbZA8dw/view?usp=sharing) shows the opening stage for the most capable AI
 
 ## Game play videos
 Click the links below or find and extensive list of qr codes and links for gameplay, testing and AI.
