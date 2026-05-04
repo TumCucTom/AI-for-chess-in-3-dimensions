@@ -28,3 +28,7 @@ For all other technical information you will find all of these and more in the r
 - AI justifications
 - Client feedback and interviews
 - Research
+
+---
+
+No AI used to create/code this project or write report. AI used to re-extract code.
