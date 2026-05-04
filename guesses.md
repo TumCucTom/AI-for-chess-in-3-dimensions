@@ -104,3 +104,12 @@ Some lines in the PDF are truncated with line continuation, but the extraction m
 3. Review `AIManager.cs` to see if it contains AI5's parent functions
 4. Verify `NeuralNetwork.cs` doesn't contain additional classes
 5. The `TimerHelper` class name conflicts with Unity's `Timer` - worth verifying actual class name
+
+## Missing Classes
+
+The PDF references `RandomNumber rnd = new RandomNumber();` but the actual `RandomNumber` class definition appears to be MISSING from the PDF. This may be:
+1. An oversight in the original report
+2. Defined elsewhere in the PDF we haven't found
+3. A utility class that wasn't included in the code section
+
+The `RandomNumber` class (not shown in PDF, but referenced) was created to work around Unity's random seed issues with the AI making the same moves. The class itself was not found in the PDF text extraction.
