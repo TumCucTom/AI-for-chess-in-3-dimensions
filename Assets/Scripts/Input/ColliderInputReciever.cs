@@ -1,13 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 public class ColliderInputReciever : InputReciever
 {
 private ChessGameController gameController = new ChessGameController();
-
 private Vector3 clickPosition;
 void Update()
 {
@@ -22,7 +18,6 @@ OnInputRecieved();
 }
 }
 }
-
 public override void OnInputRecieved()
 {
 foreach (var handler in inputHandlers)
@@ -38,14 +33,8 @@ handler.ProcessInput(new Vector3(1000,1000,1000), null, null);
 }
 }
 }
-
-
-
 DEBUG INPUT HANDLER – UNUSED DURING GAME
 using System;
-
-
-
-
-374
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;

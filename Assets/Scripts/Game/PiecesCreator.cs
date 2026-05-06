@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 public class PiecesCreator : MonoBehaviour
 {
 [SerializeField] private GameObject[] piecesPrefabs;
@@ -11,7 +7,6 @@ public class PiecesCreator : MonoBehaviour
 [SerializeField] private Material redMaterial;
 private Dictionary<string, GameObject> nameToPieceDict = new Dictionary<string,
 GameObject>();
-
 private void Awake()
 {
 foreach (var piece in piecesPrefabs)
@@ -20,7 +15,6 @@ nameToPieceDict.Add(piece.GetComponent<Piece>().GetType().ToString(),
 piece);
 }
 }
-
 public GameObject CreatePiece(Type type)
 {
 GameObject prefab = nameToPieceDict[type.ToString()];
@@ -31,7 +25,6 @@ return newPiece;
 }
 return null;
 }
-
 public Material GetTeamMaterial(TeamColor team, Type type)
 {
 Material colour = team == TeamColor.White ? whiteMaterial : blackMaterial;
@@ -42,11 +35,8 @@ colour = team == TeamColor.White ? blueMaterial : redMaterial;
 return colour;
 }
 }
-
-
-
-
-372
 SQAURE SELECTOR CREATOR
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;

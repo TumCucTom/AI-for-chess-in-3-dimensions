@@ -1,23 +1,11 @@
-using System;
-using System.IO;
-using System.Linq;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 public class NNManager
 {
 public NeuralNetwork mainStateNetwork = new NeuralNetwork(new int[5]
 {7168,3584,512,64,1}); // one input per piece per square per team, hidden layer in
 hopes it identifies black team negativity, hidden layer size of board, hidden layer 5x
 smaller,output
-
 public activationType activation { get; set; }
 public costType cost { get; set; }
-
-
-
-
-330
 public NNManager(int[] NNcomposure, activationType activation, costType cost)
 {
 mainStateNetwork = new NeuralNetwork(NNcomposure);
@@ -29,7 +17,6 @@ throw new NeuralNetworkInstantiationFailed("The cost and activation
 functions were invalid");
 }
 }
-
 private bool ActivationAndCostAreCompatible()
 {
 if (cost == costType.crossEntropy)
@@ -54,14 +41,12 @@ return true;
 }
 return false;
 }
-
 public float[] FeedForward(float[] inputs)
 {
 return mainStateNetwork.runNetworkTanh(inputs); // as i know i will jsut be
 using this combination of activation and cost easier to implement than many if
 statements
 }
-
 private void TrainingNNWithData()
 {
 float[][][] tData = GetTData();
@@ -77,18 +62,11 @@ for (int j = 0; j < 100; j++)
 Tinputs[j] = TinputsWhole[i + j];
 Toutputs[j] = ToutputsWhole[i + j];
 }
-
 mainStateNetwork.TrainWithBackPropAndTanhWithCustomCostAndL2Regularisation(Tinputs,
 Toutputs);
-
-
-
-
-331
 mainStateNetwork.SaveNNCurrentState();
 }
 }
-
 private float[][][] GetTData()
 {
 string filePath = "Assets/Training Data/T.txt";
@@ -111,17 +89,3 @@ tData[1][current] = output;
 return tData;
 }
 }
-
-
-
-CHESS GAME
-
-PIECES (FOLDER FOR PIECE SCRIPTS – NOT PIECE CLASS)
-
-
-PAWN
-
-
-
-using System;
-using System.Collections;

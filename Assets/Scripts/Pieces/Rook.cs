@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 public class Rook : Piece
 {
 private Vector3Int[] directions = new Vector3Int[]
@@ -15,14 +12,8 @@ new Vector3Int(-1,0,0),
 public override List<Vector3Int> SelectAvaliableSquares()
 {
 avaliableMoves.Clear();
-
 float range = Board.BOARD_SIZE;
 foreach (var direction in directions)
-
-
-
-
-335
 {
 for (int i = 1; i <= range; i++)
 {
@@ -43,13 +34,4 @@ break;
 }
 return avaliableMoves;
 }
-
-
 }
-
-
-COMMONER
-
-
-
-using System.Collections;

@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 public class AI2 : AIManager
 {
 public AI2 (ChessPlayer currentAiPlayer, ChessPlayer opposingPlayer, Board board)
@@ -9,7 +6,6 @@ this.currentAiPlayer = currentAiPlayer;
 this.board = board;
 this.opposingPlayer = opposingPlayer;
 }
-
 public override void MoveMakerController(ChessPlayer aiPlayer, ChessPlayer
 opposingPlayer)
 {
@@ -19,11 +15,9 @@ List<Piece> pieces = new List<Piece>();
 List<Vector3Int> pieceCoords = new List<Vector3Int>();
 (movesCurrentlyAvailable, pieces, pieceCoords) =
 currentAiPlayer.ReturnAllPossibleMoves();
-
 Vector3Int coordsOfPieceToMove = Vector3Int.zero;
 Vector3Int coordsToMoveTo = Vector3Int.zero;
 int randomVal = rnd.Next(0, 100);
-
 if (randomVal < 15)//15%
 {
 (coordsOfPieceToMove, coordsToMoveTo) =
@@ -44,11 +38,6 @@ else
 GetMoveMostValueFrom2LookAheadWithAccuracyAndLargeMoveNegativityMitigation(movesCurren
 tlyAvailable, pieces, pieceCoords, 0.15f);
 }
-
 board.AIMakeMove(coordsOfPieceToMove, coordsToMoveTo);
-
 }
 }
-
-AI3
-using System.Collections;

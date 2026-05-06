@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 public class AI1 : AIManager
 {
 public AI1 (ChessPlayer currentAiPlayer, ChessPlayer opposingPlayer, Board board)
@@ -18,10 +15,8 @@ List<Piece> pieces = new List<Piece>();
 List<Vector3Int> pieceCoords = new List<Vector3Int>();
 (movesCurrentlyAvailable, pieces, pieceCoords) =
 currentAiPlayer.ReturnAllPossibleMoves();
-
 Vector3Int coordsOfPieceToMove;
 Vector3Int coordsToMoveTo;
-
 if(rnd.Next(1,11) == 5)
 {
 (coordsOfPieceToMove, coordsToMoveTo) =
@@ -45,15 +40,6 @@ else
 GetMoveMostValueFrom2LookAheadWithAccuracy(movesCurrentlyAvailable,pieces,
 pieceCoords, 0.25f);
 }
-
 board.AIMakeMove(coordsOfPieceToMove, coordsToMoveTo);
-
 }
 }
-
-
-
-
-251
-AI2
-using System.Collections;

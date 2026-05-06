@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 public class King : Piece
 {
 Vector3Int[] directions = new Vector3Int[]
@@ -15,11 +11,6 @@ new Vector3Int(0,1,-1),
 new Vector3Int(1,-1,-1),
 new Vector3Int(1,0,-1),
 new Vector3Int(1,1,-1),
-
-
-
-
-338
 new Vector3Int(-1,-1,1),
 new Vector3Int(-1,0,1),
 new Vector3Int(-1,1,1),
@@ -29,7 +20,6 @@ new Vector3Int(1,-1,1),
 new Vector3Int(1,0,1),
 new Vector3Int(1,1,1),
 new Vector3Int(0,0,1),
-
 new Vector3Int(-1,-1,0),
 new Vector3Int(-1,0,0),
 new Vector3Int(-1,1,0),
@@ -38,24 +28,18 @@ new Vector3Int(0,1,0),
 new Vector3Int(1,-1,0),
 new Vector3Int(1,0,0),
 new Vector3Int(1,1,0),
-
 };
-
 private Piece leftRook;
 private Piece rightRook;
-
 private Vector3Int leftCastlingMove;
 private Vector3Int rightCastlingMove;
-
 public override List<Vector3Int> SelectAvaliableSquares()
 {
 avaliableMoves.Clear();
 AssignStandardMoves();
 AssignCastlingMoves();
 return avaliableMoves;
-
 }
-
 private void AssignCastlingMoves()
 {
 leftCastlingMove = new Vector3Int(-1, -1, 0);
@@ -76,16 +60,10 @@ avaliableMoves.Add(rightCastlingMove);
 }
 }
 }
-
 private Piece GetPieceInDirection<T>(TeamColor team, Vector3Int direction)
 {
 for (int i = 1; i <= Board.BOARD_SIZE; i++)
 {
-
-
-
-
-339
 Vector3Int nextCoords = occupiedSquare + direction * i;
 Piece piece = board.GetPieceOnSquare(nextCoords);
 if (!board.CheckIfCoordinatesAreOnBoard(nextCoords))
@@ -100,7 +78,6 @@ return piece;
 }
 return null;
 }
-
 private void AssignStandardMoves()
 {
 float range = 1;
@@ -124,7 +101,6 @@ break;
 }
 }
 }
-
 public override void MovePiece(Vector3Int coords, Piece piece = null, bool isPawn
 = false)
 {
@@ -142,28 +118,4 @@ rightRook.occupiedSquare, rightRook, null);
 rightRook.MovePiece(coords + new Vector3Int(1, 0, 0));
 }
 }
-
 }
-
-BOARD
-
-using System;
-
-
-
-
-340
-using System.IO;
-
-using System.Collections;
-
-using System.Collections.Generic;
-
-using UnityEngine;
-
-using UnityEngine.UI;
-
-using UnityEditor;
-
-using Unity;
-

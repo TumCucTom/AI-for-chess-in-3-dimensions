@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 public class Bishop : Piece
 {
 private Vector3Int[] directions = new Vector3Int[]
@@ -8,11 +5,6 @@ private Vector3Int[] directions = new Vector3Int[]
 new Vector3Int(1, 1,0),
 new Vector3Int(1, -1,0),
 new Vector3Int(-1, 1,0),
-
-
-
-
-334
 new Vector3Int(-1,- 1,0),
 new Vector3Int(-1,- 1,-1),
 new Vector3Int(-1,- 1, 1),
@@ -49,10 +41,3 @@ break;
 return avaliableMoves;
 }
 }
-
-
-ROOK
-
-
-
-using System.Collections;
